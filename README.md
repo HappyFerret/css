@@ -1,5 +1,5 @@
 
-# Airbnb CSS / Sass Styleguide
+# LocalHeroes CSS / Sass Styleguide (based on Airbnb)
 
 *A mostly reasonable approach to CSS and Sass*
 
