@@ -129,7 +129,7 @@ We encourage the use of BEM for naming convention:
   * CSS Trick's [BEM 101](https://css-tricks.com/bem-101/)
   * Harry Roberts' [introduction to BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
 
-We recommend a variant of BEM with PascalCased “blocks”, which works particularly well when combined with components (e.g. React). Underscores and dashes are still used for modifiers and children.
+We recommend a variant of BEM with PascalCased “blocks”, which works particularly well when combined with components (e.g. React). camelCase for elements and modifiers.
 
 **Example**
 
@@ -139,9 +139,9 @@ function ListingCard() {
   return (
     <article class="ListingCard ListingCard--featured">
 
-      <h1 class="ListingCard__title">Adorable 2BR in the sunny Mission</h1>
+      <h1 class="ListingCard__mainTitle">Adorable 2BR in the sunny Mission</h1>
 
-      <div class="ListingCard__content">
+      <div class="ListingCard__mainContent">
         <p>Vestibulum id ligula porta felis euismod semper.</p>
       </div>
 
@@ -154,12 +154,12 @@ function ListingCard() {
 /* ListingCard.css */
 .ListingCard { }
 .ListingCard--featured { }
-.ListingCard__title { }
-.ListingCard__content { }
+.ListingCard__mainTitle { }
+.ListingCard__mainContent { }
 ```
 
   * `.ListingCard` is the “block” and represents the higher-level component
-  * `.ListingCard__title` is an “element” and represents a descendant of `.ListingCard` that helps compose the block as a whole.
+  * `.ListingCard__mainTitle` is an “element” and represents a descendant of `.ListingCard` that helps compose the block as a whole.
   * `.ListingCard--featured` is a “modifier” and represents a different state or variation on the `.ListingCard` block.
 
 ### ID selectors
