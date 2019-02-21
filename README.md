@@ -1,3 +1,4 @@
+
 # Airbnb CSS / Sass Styleguide
 
 *A mostly reasonable approach to CSS and Sass*
@@ -94,14 +95,14 @@ Finally, properties are what give the selected elements of a rule declaration th
 **Good**
 
 ```css
-.avatar {
+.Avatar {
   border-radius: 50%;
   border: 2px solid white;
 }
 
-.one,
-.selector,
-.perLine {
+.One,
+.Selector,
+.PerLine {
   // ...
 }
 ```
@@ -174,7 +175,7 @@ Avoid binding to the same class in both your CSS and JavaScript. Conflating the 
 We recommend creating JavaScript-specific classes to bind to, prefixed with `.js-`:
 
 ```html
-<button class="btn btn-primary js-request-to-book">Request to Book</button>
+<button class="Btn Btn--primary js-request-to-book">Request to Book</button>
 ```
 
 ### Border
@@ -184,7 +185,7 @@ Use `0` instead of `none` to specify that a style has no border.
 **Bad**
 
 ```css
-.foo {
+.Foo {
   border: none;
 }
 ```
@@ -192,7 +193,7 @@ Use `0` instead of `none` to specify that a style has no border.
 **Good**
 
 ```css
-.foo {
+.Foo {
   border: 0;
 }
 ```
@@ -212,7 +213,7 @@ Use `0` instead of `none` to specify that a style has no border.
     List all standard property declarations, anything that isn't an `@include` or a nested selector.
 
     ```scss
-    .btn {
+    .Btn {
       background: green;
       font-weight: bold;
       // ...
@@ -224,7 +225,7 @@ Use `0` instead of `none` to specify that a style has no border.
     Grouping `@include`s at the end makes it easier to read the entire selector.
 
     ```scss
-    .btn {
+    .Btn {
       background: green;
       font-weight: bold;
       @include transition(background 0.5s ease);
@@ -237,12 +238,12 @@ Use `0` instead of `none` to specify that a style has no border.
     Nested selectors, _if necessary_, go last, and nothing goes after them. Add whitespace between your rule declarations and nested selectors, as well as between adjacent nested selectors. Apply the same guidelines as above to your nested selectors.
 
     ```scss
-    .btn {
+    .Btn {
       background: green;
       font-weight: bold;
       @include transition(background 0.5s ease);
 
-      .icon {
+      .Icon {
         margin-right: 10px;
       }
     }
@@ -265,9 +266,9 @@ Mixins should be used to DRY up your code, add clarity, or abstract complexity--
 **Do not nest selectors more than three levels deep!**
 
 ```scss
-.pageContainer {
-  .content {
-    .profile {
+.PageContainer {
+  .Content {
+    .Profile {
       // STOP!
     }
   }
