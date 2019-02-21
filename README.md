@@ -70,8 +70,7 @@ Finally, properties are what give the selected elements of a rule declaration th
 ### Formatting
 
 * Use soft tabs (2 spaces) for indentation.
-* Prefer dashes over camelCasing in class names.
-  - Underscores and PascalCasing are okay if you are using BEM (see [OOCSS and BEM](#oocss-and-bem) below).
+* Prefer camelCasing in class names, use underscores according to BEM.
 * Do not use ID selectors.
 * When using multiple selectors in a rule declaration, give each selector its own line.
 * Put a space before the opening brace `{` in rule declarations.
