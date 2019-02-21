@@ -11,7 +11,7 @@
 1. [CSS](#css)
     - [Formatting](#formatting)
     - [Comments](#comments)
-    - [OOCSS and BEM](#oocss-and-bem)
+    - [BEM](#bem)
     - [ID Selectors](#id-selectors)
     - [JavaScript hooks](#javascript-hooks)
     - [Border](#border)
@@ -69,7 +69,7 @@ Finally, properties are what give the selected elements of a rule declaration th
 ### Formatting
 
 * Use soft tabs (2 spaces) for indentation.
-* Prefer camelCasing in class names, use underscores according to BEM.
+* Prefer PamelCasing in class names, use underscores and hyphens according to BEM.
 * Do not use ID selectors.
 * When using multiple selectors in a rule declaration, give each selector its own line.
 * Put a space before the opening brace `{` in rule declarations.
@@ -114,7 +114,7 @@ Finally, properties are what give the selected elements of a rule declaration th
   - Uses of z-index
   - Compatibility or browser-specific hacks
 
-### BEM-ish
+### BEM
 
 We encourage the use of BEM for naming convention:
 
@@ -123,7 +123,7 @@ We encourage the use of BEM for naming convention:
   * It allows for less nesting and lower specificity
   * It helps in building scalable stylesheets
 
-**BEM**, or “Block-Element-Modifier”, is a _naming convention_ for classes in HTML and CSS. It was originally developed by Yandex with large codebases and scalability in mind, and can serve as a solid set of guidelines for implementing OOCSS.
+**BEM**, or “Block-Element-Modifier”, is a _naming convention_ for classes in HTML and CSS. It was originally developed by Yandex with large codebases and scalability in mind.
 
   * CSS Trick's [BEM 101](https://css-tricks.com/bem-101/)
   * Harry Roberts' [introduction to BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
