@@ -9,6 +9,9 @@
     "test": "ava ./test/test-*.js",
     "lint": "eslint ."
   },
+  "publishConfig": {
+    "registry": "https://npm-registry.prod.superwilbur.com"
+  },
   "devDependencies": {
     "ava": "0.23.0",
     "eslint": "^3.0.1",
