@@ -1,0 +1,23 @@
+{
+  "name": "@lh/css-styleguide",
+  "version": "1.0.0",
+  "description": "LocalHeroes CSS / Sass Styleguide",
+  "main": "index.js",
+  "repository": "https://github.com/HappyFerret/css-styleguide.git",
+  "license": "MIT",
+  "scripts": {
+    "test": "ava ./test/test-*.js",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "ava": "0.23.0",
+    "eslint": "^3.0.1",
+    "eslint-config-airbnb-base": "^4.0.0",
+    "eslint-plugin-import": "^1.10.2"
+  },
+  "dependencies": {
+    "stylelint": "^8.0.0",
+    "stylelint-order": "^0.7.0",
+    "stylelint-scss": "^1.2.1"
+  }
+}

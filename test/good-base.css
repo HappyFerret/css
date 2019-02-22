@@ -1,0 +1,52 @@
+
+/* quotes */
+.Icon:before {
+  content: "\3e";
+}
+
+
+/* spacing */
+.Avatar {
+  line-height: .75;
+  border: 2px solid white;
+}
+
+.Name {
+  border: 0;
+}
+
+
+/* multiple selectors */
+.Yes,
+.Sure,
+.Good { }
+
+
+/* @-rules */
+@media print {
+  background: pink;
+}
+
+@media (min-width: 768px) {
+  font-size: 18px;
+}
+
+
+/* comments */
+.ListingCard--featured {
+  /* something fancy */
+  background: pink;
+}
+
+/* ^ empty line */
+.ListingCard__title { }
+
+
+/* BEM selectors */
+.ListingCard { }
+
+.ListingCard--featured { }
+
+.ListingCard__title { }
+
+.ListingCard__content--alternative { }
