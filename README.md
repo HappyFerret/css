@@ -5,6 +5,7 @@
 
 ## Table of Contents
 
+1. [Install](#install)
 1. [Terminology](#terminology)
     - [Rule Declaration](#rule-declaration)
     - [Selectors](#selectors)
@@ -24,6 +25,10 @@
     - [Extend directive](#extend-directive)
     - [Nested selectors](#nested-selectors)
 1. [License](#license)
+
+## Install
+To add the linting to your project, you have to install this package.
+See [INSTALL.md](INSTALL.md)
 
 ## Terminology
 
